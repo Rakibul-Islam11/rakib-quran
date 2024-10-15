@@ -1,0 +1,50 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("imges/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* For the blinking effect */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-blink {
+    display: inline-block;
+    width: 12px;
+    /* Adjust the size of the dot */
+    height: 12px;
+    background-color: #ef4444;
+    /* Red color */
+    border-radius: 50%;
+    /* Make it a circle */
+    animation: blink 1s infinite;
+    /* Blinking animation */
+}
+@media only screen and (min-width: 768px) and (max-width:1023px){
+    
+    .meccaTv_cus,.peaceTv_cus {
+        width: 146px;
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width:840px){
+    .radiobtn_cus {
+        width: 225px;
+        margin-left: 6px;
+    }
+}
