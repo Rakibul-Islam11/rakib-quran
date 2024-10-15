@@ -6,7 +6,14 @@
     background-position: center;
     background-size: cover;
 }
-
+.nav_cus {
+    height: 65px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
 
 /* For the blinking effect */
 @keyframes blink {
@@ -112,4 +119,48 @@
         align-items: center;
         justify-content: center;
     }
+}
+
+/* marqure text start */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+#radioText {
+    display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        transition: all 0.5s ease;
+}
+#radioBTN {
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.marquee-text {
+    animation: marquee 5s linear infinite;
+}
+#playPauseBtn {
+    width: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 100%;
+    padding: 0 8px;
+    background-color: #3B82F6;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    z-index: 1;
 }

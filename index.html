@@ -9,14 +9,15 @@
 </head>
 <body>
     <section class="main lg:pt-6">
+<!--! nav start-->
         <nav class=" nav_cus lg:container md:h-14 flex bg-slate-200 md:justify-between md:items-center mx-auto px-6">
             <a class=" w-52 text-black outline-double " href=""><img class="w-52" src="imges/brand.png" alt=""></a>
             <div class="media_btn flex md:justify-between items-center md:gap-3">
-                <a class=" radiobtn_cus w-64 text-black outline-double p-2 lg:text-lg font-bold hover:bg-red-500" href="">
-                    <span id="playPauseBtn" class="w-28  bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 me-3 rounded">
+                <a id="radioBTN" class=" radiobtn_cus w-64 text-black outline-double p-2 lg:text-lg font-bold hover:bg-red-500" href="">
+                    <span id="playPauseBtn" class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 me-3 rounded">
                         ▶Play
                     </span>
-                    Listen live radio
+                    <span id="radioText">Live radio</span>
                 </a>
                 <a class=" peaceTv_cus w-auto text-black p-2 outline-double hover:bg-red-500" href="#">
                     <span class=" bg-red-600 rounded-full animate-blink inline-block"></span>
@@ -30,9 +31,12 @@
                 </a>
             </div>
         </nav>
+        <!--radio outpuy-->
+        <div id="forUtptRadio"></div>
+<!--!nav end-->
 
     </section>
-
+<script src="script.js"></script>
 
     
 </body>
