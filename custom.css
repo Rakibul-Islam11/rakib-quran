@@ -56,14 +56,12 @@
 }
 @media only screen and (max-width: 768px) {
     .nav_cus {
-        height: 218px;
+        height: 229px;
         flex-direction: column;
-        
         
     }
     .media_btn {
         margin-top: 15px;
-        
     }
     
 }
@@ -71,7 +69,6 @@
    
         .radiobtn_cus {
             padding : 10px;
-            
         }
 }
 @media only screen and (max-width: 767px){
@@ -89,9 +86,24 @@
         
     }
     .nav_cus {
-        width: 360px;
+        width: 335px;
         justify-content: center;
         align-items: center;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 1px 12px rgba(0, 0, 0, 0.10);
+        border: 0px solid rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .main {
+        padding-top: 15px;
+    }
+    .radiobtn_cus, .peaceTv_cus  span:nth-child(2), .meccaTv_cus span:nth-child(2), .peaceTv_cus, .meccaTv_cus {
+        color: white !important;
     }
 }
 @media only screen and (min-width: 610px) and (max-width: 767px){
