@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
 .main {
     width: 100vw;
     height: 100vh;
@@ -8,6 +10,10 @@
 }
 .nav_cus {
     height: 65px;
+    font-family: "Oxanium", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -165,3 +171,62 @@
     z-index: 1;
 }
 /* for tvone start */
+.inpt_cus {
+    background-color: #e2e8f0;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.btn_cus {
+    background-color: #e2e8f0;
+    border-radius: 7px;
+    font-family: "Oxanium", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+}
+.searchbox_and_button_main {
+    max-width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+@media only screen and (max-width : 515px){
+    .inpt_cus {
+        padding: 6px;
+        max-width: 410px;
+    }
+    .searchbox_and_button_main {
+        padding: 8px;
+        margin-top: 2px !important;
+    }
+    
+}
+
+.sura_output_main {
+    height: fit-content;
+    backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 1px 12px rgba(0, 0, 0, 0.10);
+        border: 0px solid rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+}
+.main_cuss {
+    gap: 4rem;
+}
+@media only screen and (max-width: 767px){
+    .sura_output_main {
+        width: 96%;
+    }
+    .sura_output_main  {
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width:515px){
+    .sura_output_main {
+            margin-top: 2px !important;
+        }
+}

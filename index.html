@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
+            integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="custom.css">
+    <style>
+        
+        
+    </style>
+
 </head>
 <body>
     <section class="main lg:pt-6">
@@ -24,7 +35,7 @@
                     <span class="font-bold lg:text-lg">Peace TV Live</span>
                 </a>
 
-                <a class=" meccaTv_cus w-auto text-black p-2 outline-double hover:bg-red-500" href="#">
+                <a class=" meccaTv_cus w-auto text-black p-2 outline-double hover:bg-red-500" href="tvtwo.html">
                     <span class=" bg-red-600 rounded-full animate-blink inline-block">
                     </span>
                     <span class="font-bold lg:text-lg">Mecca TV Live</span>
@@ -35,8 +46,43 @@
         <div id="forUtptRadio"></div>
 <!--!nav end-->
 
+        <section class="searchbox_and_button_main flex mt-5 m-auto ">
+            <input id="inptsr" type="text" class=" inpt_cus w-full p-3 outline-double text-black text-center" placeholder="Letsing Surah With Bangla Tafsir By The Sura Number.....">
+            <button id="btnsr" class="btn_cus px-9 py-2 outline-double text-black font-bold">Search</button>
+        </section>
+<!--prealoader start-->
+<span id="preLoader" class=" flex justify-center items-center text-center m-auto loading loading-bars loading-lg mt-8 text-red-500 hidden"></span>
+<!--preloader end-->
+        <section id="suraOutPutMain" class="sura_output_main  md:w-3/4 mx-auto bg-red-400 flex flex-col items-center md:mt-5">
+            
+            <div class="flex flex-col  items-center">
+                <div id="suraOutPut">
+                
+                </div>
+                <div id="forPlayPauseBTN">
+
+                </div>
+                <div id="suraName">
+                
+                </div>
+                <div id="tafsirOutput" class="text-center">
+                
+                </div>
+            </div>
+            <div class="info_cus flex flex-row justify-between gap-2 flex-wrap">
+                <div  id="ayahsNumber"></div>
+                <div  id="suraNumberr"></div>
+                <div  id="tottalAyahOftheSura"></div>
+                <div  id="revelationType"></div>
+                <div  id="juz"></div>
+                <div  id="munzil"></div>
+                <div  id="ruku"></div>
+                <div  id="sejda"></div>
+            </div>
+        </section>
     </section>
-<script src="script.js"></script>
+<script type="module" src="script.js"></script>
+
 
     
 </body>
